@@ -1,5 +1,3 @@
----
-
 # 🚀 Advait Dharmadhikari
 
 **AI Architect · Product Manager · Strategy Consultant**
