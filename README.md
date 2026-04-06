@@ -116,9 +116,9 @@ I am currently targeting roles in:
 
 ## 🤝 Let’s Connect
 
-* 💼 LinkedIn: *(Add your link)*
-* 📧 Email: *(Add your email)*
-* 🌐 Portfolio: *(Optional — if you build one)*
+* 💼 LinkedIn: *https://www.linkedin.com/in/advaitdharmadhikari*
+* 📧 Email: *advaitdharmadhikari27@gmail.com*
+* 🌐 Portfolio: *(https://advaitdharmadhikari.netlify.app)*
 
 ---
 
