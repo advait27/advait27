@@ -1,5 +1,3 @@
-Here is a sharp, high-impact **`README.md`** tailored to your profile, positioning you as an AI + Strategy + Product hybrid. It is structured to impress recruiters, collaborators, and hiring managers quickly.
-
 ---
 
 # 🚀 Advait Dharmadhikari
