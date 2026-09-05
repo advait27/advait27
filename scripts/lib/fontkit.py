@@ -49,10 +49,12 @@ WEIGHTS = {
 # contribution count going from 1,247 to 1,250 cannot change the charset.
 VOLATILE = "0123456789.,%+-:/()"
 
-# For panels that print names they do not control: repos, languages.
+# For panels that print names they do not control: repos, languages. The
+# ellipsis belongs here because those are exactly the strings _shorten()
+# truncates, and it is only ever produced by truncating one of them.
 ALNUM = ("abcdefghijklmnopqrstuvwxyz"
          "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-         "0123456789_-.+#/ ")
+         "0123456789_-.+#/ \u2026")
 
 # Frozen OpenType timestamp (seconds since 1904-01-01). fontTools would
 # otherwise carry the source font's dates through into the output.

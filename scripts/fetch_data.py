@@ -204,6 +204,11 @@ def collect(login, token, today):
         # Sort by value desc, then name asc: ties must not reorder between runs.
         return [[k, v] for k, v in sorted(mapping.items(), key=lambda kv: (-kv[1], kv[0]))]
 
+    # The profile repo itself is excluded. The nightly job pushes to it, so it
+    # would top "most recently pushed" every single day, permanently, and
+    # crowd out the work that is actually worth showing.
+    recent_pool = [r for r in repos if r["name"].lower() != login.lower()]
+
     recent = [
         {
             "name": r["name"],
@@ -212,7 +217,8 @@ def collect(login, token, today):
             "pushed": r["pushedAt"][:10],
             "stars": r["stargazerCount"],
         }
-        for r in sorted(repos, key=lambda r: (r["pushedAt"], r["name"]), reverse=True)[:5]
+        for r in sorted(recent_pool, key=lambda r: (r["pushedAt"], r["name"]),
+                        reverse=True)[:5]
     ]
 
     return {

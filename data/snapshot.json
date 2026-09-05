@@ -10,27 +10,27 @@
       ],
       [
         "HTML",
-        3724223
+        3711749
       ],
       [
         "Python",
-        2763051
-      ],
-      [
-        "TypeScript",
-        281200
+        2605011
       ],
       [
         "JavaScript",
-        272175
+        270869
       ],
       [
         "CSS",
-        255233
+        233518
+      ],
+      [
+        "TypeScript",
+        231223
       ],
       [
         "Shell",
-        11242
+        9947
       ],
       [
         "PLpgSQL",
@@ -71,7 +71,7 @@
         1
       ]
     ],
-    "repo_count": 38
+    "repo_count": 37
   },
   "login": "advait27",
   "name": "Advait Dharmadhikari",
@@ -101,37 +101,37 @@
       },
       {
         "description": "",
-        "language": "Python",
-        "name": "trinzo-case",
-        "pushed": "2026-08-18",
-        "stars": 1
-      },
-      {
-        "description": "",
         "language": "HTML",
         "name": "advait27.github.io",
         "pushed": "2026-08-16",
         "stars": 0
+      },
+      {
+        "description": "Enterprise Autonomous Decision Intelligence Platform — a governed multi-agent AI that investigates business questions with verified claims, human-approved actions, and full auditability",
+        "language": "HTML",
+        "name": "EADIP",
+        "pushed": "2026-07-11",
+        "stars": 0
       }
     ],
-    "stars": 3,
-    "total": 38
+    "stars": 2,
+    "total": 37
   },
   "schema": 1,
   "stale": false,
   "streak": {
-    "active_days": 135,
-    "all_time": 736,
+    "active_days": 134,
+    "all_time": 732,
     "current": 4,
     "current_from": "2026-09-02",
     "current_to": "2026-09-05",
-    "longest": 10,
-    "longest_from": "2026-08-12",
-    "longest_to": "2026-08-21",
+    "longest": 6,
+    "longest_from": "2026-05-21",
+    "longest_to": "2026-05-26",
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 175,
+    "commits": 172,
     "days": [
       [
         "2025-09-06",
@@ -1519,7 +1519,7 @@
       ],
       [
         "2026-08-18",
-        6
+        0
       ],
       [
         "2026-08-19",
@@ -1591,7 +1591,7 @@
       ],
       [
         "2026-09-05",
-        5
+        7
       ]
     ],
     "from": "2025-09-06",
@@ -1600,6 +1600,6 @@
     "restricted": 415,
     "reviews": 0,
     "to": "2026-09-05",
-    "total": 608
+    "total": 604
   }
 }

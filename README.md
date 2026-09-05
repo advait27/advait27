@@ -106,13 +106,13 @@ product strategy from 0 to scale.
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 608 |
-| Commits / pull requests / reviews | 175 / 4 / 0 |
+| Contributions (365 days) | 604 |
+| Commits / pull requests / reviews | 172 / 4 / 0 |
 | Current streak | 4 days |
-| Longest streak | 10 days |
-| All-time contributions | 736 |
-| Active days since 2020 | 135 |
-| Public repositories | 38 |
+| Longest streak | 6 days |
+| All-time contributions | 732 |
+| Active days since 2020 | 134 |
+| Public repositories | 37 |
 
 **Languages, by primary language of repository**
 
@@ -130,8 +130,8 @@ product strategy from 0 to scale.
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 | [Capstone](https://github.com/advait27/Capstone) | Python | 2026-08-23 |
 | [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-08-20 |
-| [trinzo-case](https://github.com/advait27/trinzo-case) | Python | 2026-08-18 |
 | [advait27.github.io](https://github.com/advait27/advait27.github.io) | HTML | 2026-08-16 |
+| [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-07-11 |
 
 <sub>Generated 2026-09-05 from `data/snapshot.json`.</sub>
 
