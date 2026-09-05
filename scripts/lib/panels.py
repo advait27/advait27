@@ -52,14 +52,17 @@ def _new(width, height, title, desc, charset, weights=(400, 700)):
 # ---------------------------------------------------------------------------
 
 def hero(snap, t):
-    name = snap["name"].lower()
-    role = "APPLIED AI ENGINEER"
-    tag = "llm systems / rag / agentic workflows / evaluation"
+    # Name in title case; everything under it stays lowercase, so the name
+    # is the only thing on the page carrying capitals and reads as the
+    # heading it is.
+    name = snap["name"]
+    role = "FORWARD DEPLOYED AI ENGINEER"
+    tag = "agentic systems / rag / llm evaluation / enterprise deployment"
     meta = "dublin, ireland     ucd smurfit     frensei"
 
     h = 178
     charset = set(name + role + tag + meta) | set(VOLATILE)
-    svg = _new(W, h, f"{snap['name']} — applied AI engineer",
+    svg = _new(W, h, f"{snap['name']} — forward deployed AI engineer",
                f"{snap['name']}. {role.title()}. {tag}. {meta}.",
                charset, weights=(400, 700, 800))
 
