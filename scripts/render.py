@@ -78,10 +78,18 @@ def fallback_markdown(snap):
 
     lines = [START, "", "| | |", "|:--|--:|"]
     lines += [f"| {k} | {v} |" for k, v in rows]
-    lines += ["", "**Languages, by primary language of repository**", "",
+    lines += ["", "**Languages, measured — by primary language of repository**", "",
               "| | |", "|:--|--:|"]
     lines += [f"| {k} | {100 * v / total:.0f}% ({v}) |"
               for k, v in langs["by_repo"][:5]]
+    # Kept because the two views disagree sharply and the disagreement is the
+    # point; see docs/how-it-works.md.
+    by_bytes_total = sum(v for _, v in langs["by_bytes"]) or 1
+    top_bytes = langs["by_bytes"][0] if langs["by_bytes"] else ("n/a", 0)
+    lines += ["", f"<sub>Ranked by bytes instead, this reads as "
+                  f"{100 * top_bytes[1] / by_bytes_total:.0f}% {top_bytes[0]} — "
+                  f"notebooks store rendered cell outputs as base64 in their own "
+                  f"JSON, and Linguist counts those plots as authored code.</sub>"]
     lines += ["", "**Most recently pushed**", "", "| | | |", "|:--|:--|--:|"]
     lines += [f"| [{r['name']}](https://github.com/{snap['login']}/{r['name']}) "
               f"| {r['language'] or '—'} | {r['pushed']} |"

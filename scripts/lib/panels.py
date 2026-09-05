@@ -309,39 +309,49 @@ def streak(snap, t):
 
 
 # ---------------------------------------------------------------------------
-# langs -- by repository, not by byte
+# skills -- declared proficiency, not measured output
 # ---------------------------------------------------------------------------
 
-def langs(snap, t):
-    data = snap["langs"]["by_repo"][:5]
-    total = sum(v for _, v in snap["langs"]["by_repo"]) or 1
+# Sourced from the CV and portfolio, not from the API. These are a claim the
+# owner makes, so the panel says "self-assessed" on its face: it sits beside
+# real contribution counts, and a reader should never have to guess which of
+# the two numbers on the page were measured. Edit this list to change it.
+SKILLS = [
+    ("python", 95),
+    ("sql", 90),
+    ("langgraph / agents", 88),
+    ("fastapi", 85),
+    ("typescript", 82),
+]
+
+
+def skills(snap, t):
+    data = SKILLS[:5]
 
     h = 184
-    charset = set(ALNUM) | set(VOLATILE) | set("of repositories")
-    svg = _new(HALF, h, "Languages by repository",
-               "Primary language across public non-fork repositories: "
-               + ", ".join(f"{k} {100 * v / total:.0f}%" for k, v in data) + ".",
-               charset)
+    charset = set(ALNUM) | set(VOLATILE) | set("core stack self assessed")
+    svg = _new(HALF, h, "Core stack, self-assessed proficiency",
+               "Self-assessed proficiency, from CV: "
+               + ", ".join(f"{k} {v}%" for k, v in data) + ".", charset)
 
     svg.add(svg.line(0, 0.5, HALF, 0.5, t["rule"], 1))
-    svg.add(svg.text(0, 26, "by primary language of repository", 11, t["faint"],
+    svg.add(svg.text(0, 26, "core stack / self-assessed", 11, t["faint"],
                      anim=Svg.fade(1, 0.4, 0.2)))
 
     bar_x, bar_w = 132, HALF - 132 - 46
-    for i, (name, count) in enumerate(data):
+    for i, (name, pct) in enumerate(data):
         y = 52 + i * 23
-        pct = 100 * count / total
-        svg.add(svg.text(0, y + 8, _shorten(name.lower(), 20), 11.5, t["fg"],
+        svg.add(svg.text(0, y + 8, _shorten(name, 20), 11.5, t["fg"],
                          anim=Svg.fade(1, 0.4, 0.3 + i * 0.07)))
         svg.add(svg.rect(bar_x, y, bar_w, 9, t["grid"], rx=4.5,
                          anim=Svg.fade(1, 0.4, 0.3 + i * 0.07)))
         svg.add(svg.rect(bar_x, y, 0, 9, t["accent"], rx=4.5,
                          anim=Svg.anim("width", 0, bar_w * pct / 100, 0.75,
-                                        0.35 + i * 0.07)))
-        svg.add(svg.text(HALF, y + 8, f"{pct:.0f}%", 11, t["muted"], anchor="end",
+                                       0.35 + i * 0.07)))
+        svg.add(svg.text(HALF, y + 8, f"{pct}%", 11, t["muted"], anchor="end",
                          anim=Svg.fade(1, 0.4, 0.45 + i * 0.07)))
 
-    note = f"{snap['langs']['repo_count']} public repositories"
+    note = "measured language split in the README"
     svg.note_chars(note)
     svg.add(svg.text(0, h - 10, note, 10, t["faint"], anim=Svg.fade(1, 0.4, 1.0)))
     return svg
@@ -387,6 +397,6 @@ PANELS = {
     "pulse":  (pulse, W),
     "year":   (year, W),
     "streak": (streak, HALF),
-    "langs":  (langs, HALF),
+    "skills": (skills, HALF),
     "now":    (now, W),
 }

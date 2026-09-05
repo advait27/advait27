@@ -80,8 +80,8 @@ product strategy from 0 to scale.
   <img alt="Current streak, longest streak, and all-time contributions." src="svg/streak-light.svg" width="432">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="svg/langs-dark.svg">
-  <img alt="Languages by primary language of repository." src="svg/langs-light.svg" width="432">
+  <source media="(prefers-color-scheme: dark)" srcset="svg/skills-dark.svg">
+  <img alt="Core stack, self-assessed proficiency: Python 95%, SQL 90%, LangGraph and agents 88%, FastAPI 85%, TypeScript 82%." src="svg/skills-light.svg" width="432">
 </picture>
 </p>
 
@@ -114,7 +114,7 @@ product strategy from 0 to scale.
 | Active days since 2020 | 134 |
 | Public repositories | 37 |
 
-**Languages, by primary language of repository**
+**Languages, measured — by primary language of repository**
 
 | | |
 |:--|--:|
@@ -122,6 +122,8 @@ product strategy from 0 to scale.
 | Jupyter Notebook | 38% (14) |
 | HTML | 14% (5) |
 | JavaScript | 3% (1) |
+
+<sub>Ranked by bytes instead, this reads as 75% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
 
 **Most recently pushed**
 
@@ -139,11 +141,9 @@ product strategy from 0 to scale.
 
 </details>
 
-Languages are ranked by the primary language of each repository, not by bytes.
-By bytes this profile reads as roughly three-quarters Jupyter Notebook, because
-notebooks store rendered cell outputs as base64 inside their own JSON and
-Linguist counts those plots as authored code. Ranked by repository, it is
-mostly Python, which is the truer answer.
+The stack bars above are self-assessed, from my CV. Everything else on this
+page is measured from the GitHub API — including the language split, which is
+in the details block above.
 
 ## Research
 
