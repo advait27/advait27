@@ -1,0 +1,37 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["docs/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # verify.py re-renders and compares bytes, so it needs the same
+      # standard-library-only path the nightly job uses. Nothing to install.
+      - name: Verify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/verify.py
+
+      # A render must never leave the working tree dirty: if it does, the
+      # committed SVGs disagree with the committed snapshot and the nightly
+      # job would "fix" them with a meaningless commit.
+      - name: Committed output matches the committed snapshot
+        run: |
+          set -euo pipefail
+          if [ -n "$(git status --porcelain -- svg README.md)" ]; then
+            echo "::error::rendering produced changes that are not committed:"
+            git --no-pager diff --stat -- svg README.md
+            exit 1
+          fi
+          echo "svg/ and README.md are in sync with data/snapshot.json"

@@ -1,0 +1,56 @@
+name: refresh profile
+
+on:
+  schedule:
+    # 05:17 UTC. An odd minute on purpose: GitHub queues huge numbers of jobs
+    # on the hour and cron can slip by many minutes when it does.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  # Deliberately no `push` trigger. This job commits, and a push trigger
+  # would re-run it on its own commit.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # No setup-python and no pip install: fetch_data.py and render.py are
+      # standard library only, so there is no dependency here that can break
+      # in CI and take the profile down with it. Font subsetting is the one
+      # thing that needs fontTools, and its output is committed (assets/subset).
+      - name: Fetch contribution data
+        env:
+          # PROFILE_TOKEN is a personal access token with read:user. Without
+          # it, the built-in GITHUB_TOKEN runs as github-actions[bot], which
+          # cannot see private contributions -- for this account that is about
+          # two thirds of the year, and the page would quietly understate it.
+          # The fallback keeps the job working before the secret is added; the
+          # charts then label themselves "public contributions".
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/fetch_data.py
+
+      - name: Render
+        run: python3 scripts/render.py
+
+      - name: Commit if anything actually changed
+        run: |
+          set -euo pipefail
+          TRACKED="svg data/snapshot.json README.md"
+          if [ -z "$(git status --porcelain -- $TRACKED)" ]; then
+            echo "nothing changed; not committing"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- $TRACKED
+          git commit -m "profile: refresh $(date -u +%Y-%m-%d)"
+          git push
