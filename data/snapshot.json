@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
-  "followers": 6,
-  "generated": "2026-09-05",
+  "followers": 5,
+  "generated": "2026-09-06",
   "langs": {
     "by_bytes": [
       [
@@ -14,7 +14,7 @@
       ],
       [
         "Python",
-        2605011
+        2606339
       ],
       [
         "JavaScript",
@@ -121,7 +121,7 @@
   "stale": false,
   "streak": {
     "active_days": 134,
-    "all_time": 732,
+    "all_time": 736,
     "current": 4,
     "current_from": "2026-09-02",
     "current_to": "2026-09-05",
@@ -131,12 +131,8 @@
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 172,
+    "commits": 174,
     "days": [
-      [
-        "2025-09-06",
-        0
-      ],
       [
         "2025-09-07",
         0
@@ -1591,15 +1587,19 @@
       ],
       [
         "2026-09-05",
-        7
+        11
+      ],
+      [
+        "2026-09-06",
+        0
       ]
     ],
-    "from": "2025-09-06",
+    "from": "2025-09-07",
     "issues": 0,
     "prs": 4,
-    "restricted": 415,
+    "restricted": 417,
     "reviews": 0,
-    "to": "2026-09-05",
-    "total": 604
+    "to": "2026-09-06",
+    "total": 608
   }
 }
