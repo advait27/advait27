@@ -106,21 +106,21 @@ product strategy from 0 to scale.
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 624 |
-| Commits / pull requests / reviews | 174 / 4 / 0 |
-| Current streak | 6 days |
+| Contributions (365 days) | 628 |
+| Commits / pull requests / reviews | 177 / 4 / 0 |
+| Current streak | 1 days |
 | Longest streak | 6 days |
-| All-time contributions | 752 |
-| Active days since 2020 | 136 |
-| Public repositories | 37 |
+| All-time contributions | 756 |
+| Active days since 2020 | 137 |
+| Public repositories | 38 |
 
 **Languages, measured — by primary language of repository**
 
 | | |
 |:--|--:|
-| Python | 46% (17) |
-| Jupyter Notebook | 38% (14) |
-| HTML | 14% (5) |
+| Python | 47% (18) |
+| Jupyter Notebook | 37% (14) |
+| HTML | 13% (5) |
 | JavaScript | 3% (1) |
 
 <sub>Ranked by bytes instead, this reads as 75% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
@@ -129,13 +129,13 @@ product strategy from 0 to scale.
 
 | | | |
 |:--|:--|--:|
+| [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-11 |
+| [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-11 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 | [Capstone](https://github.com/advait27/Capstone) | Python | 2026-08-23 |
 | [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-08-20 |
-| [advait27.github.io](https://github.com/advait27/advait27.github.io) | HTML | 2026-08-16 |
-| [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-07-11 |
 
-<sub>Generated 2026-09-08 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-09-12 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 
