@@ -106,12 +106,12 @@ product strategy from 0 to scale.
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 757 |
-| Commits / pull requests / reviews | 179 / 4 / 0 |
-| Current streak | 3 days |
+| Contributions (365 days) | 762 |
+| Commits / pull requests / reviews | 183 / 5 / 0 |
+| Current streak | 4 days |
 | Longest streak | 10 days |
-| All-time contributions | 885 |
-| Active days since 2020 | 143 |
+| All-time contributions | 890 |
+| Active days since 2020 | 144 |
 | Public repositories | 38 |
 
 **Languages, measured — by primary language of repository**
@@ -129,13 +129,13 @@ product strategy from 0 to scale.
 
 | | | |
 |:--|:--|--:|
+| [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | HTML | 2026-09-16 |
 | [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
 | [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-11 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 | [Capstone](https://github.com/advait27/Capstone) | Python | 2026-08-23 |
-| [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-08-20 |
 
-<sub>Generated 2026-09-16 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-09-17 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 

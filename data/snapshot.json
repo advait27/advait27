@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
   "followers": 6,
-  "generated": "2026-09-16",
+  "generated": "2026-09-17",
   "langs": {
     "by_bytes": [
       [
@@ -10,7 +10,7 @@
       ],
       [
         "HTML",
-        3711749
+        3730768
       ],
       [
         "Python",
@@ -18,11 +18,11 @@
       ],
       [
         "JavaScript",
-        270869
+        298465
       ],
       [
         "CSS",
-        233518
+        248790
       ],
       [
         "TypeScript",
@@ -83,6 +83,13 @@
   "repos": {
     "recent": [
       {
+        "description": "My portfolio website",
+        "language": "HTML",
+        "name": "Advait-portfolio",
+        "pushed": "2026-09-16",
+        "stars": 0
+      },
+      {
         "description": "",
         "language": "Python",
         "name": "Krypton",
@@ -109,13 +116,6 @@
         "name": "Capstone",
         "pushed": "2026-08-23",
         "stars": 0
-      },
-      {
-        "description": "",
-        "language": "Python",
-        "name": "AI-Research",
-        "pushed": "2026-08-20",
-        "stars": 0
       }
     ],
     "stars": 2,
@@ -124,23 +124,19 @@
   "schema": 1,
   "stale": false,
   "streak": {
-    "active_days": 143,
-    "all_time": 885,
-    "current": 3,
+    "active_days": 144,
+    "all_time": 890,
+    "current": 4,
     "current_from": "2026-09-13",
-    "current_to": "2026-09-15",
+    "current_to": "2026-09-16",
     "longest": 10,
     "longest_from": "2026-09-02",
     "longest_to": "2026-09-11",
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 179,
+    "commits": 183,
     "days": [
-      [
-        "2025-09-17",
-        0
-      ],
       [
         "2025-09-18",
         0
@@ -1595,15 +1591,19 @@
       ],
       [
         "2026-09-16",
+        5
+      ],
+      [
+        "2026-09-17",
         0
       ]
     ],
-    "from": "2025-09-17",
+    "from": "2025-09-18",
     "issues": 0,
-    "prs": 4,
+    "prs": 5,
     "restricted": 560,
     "reviews": 0,
-    "to": "2026-09-16",
-    "total": 757
+    "to": "2026-09-17",
+    "total": 762
   }
 }
