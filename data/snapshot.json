@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
   "followers": 6,
-  "generated": "2026-09-27",
+  "generated": "2026-09-28",
   "langs": {
     "by_bytes": [
       [
@@ -10,23 +10,23 @@
       ],
       [
         "HTML",
-        3731009
+        3731314
       ],
       [
         "Python",
-        2642141
-      ],
-      [
-        "JavaScript",
-        298426
-      ],
-      [
-        "CSS",
-        249026
+        2861261
       ],
       [
         "TypeScript",
-        231223
+        310382
+      ],
+      [
+        "JavaScript",
+        299595
+      ],
+      [
+        "CSS",
+        258677
       ],
       [
         "Shell",
@@ -34,15 +34,15 @@
       ],
       [
         "PLpgSQL",
-        4093
+        9889
       ],
       [
         "Makefile",
-        1865
+        2217
       ],
       [
         "Dockerfile",
-        1577
+        1916
       ],
       [
         "Go Template",
@@ -83,6 +83,13 @@
   "repos": {
     "recent": [
       {
+        "description": "Enterprise Autonomous Decision Intelligence Platform — a governed multi-agent AI that investigates business questions with verified claims, human-approved actions, and full auditability",
+        "language": "HTML",
+        "name": "EADIP",
+        "pushed": "2026-09-27",
+        "stars": 0
+      },
+      {
         "description": "My portfolio website",
         "language": "HTML",
         "name": "Advait-portfolio",
@@ -104,13 +111,6 @@
         "stars": 0
       },
       {
-        "description": "Enterprise Autonomous Decision Intelligence Platform — a governed multi-agent AI that investigates business questions with verified claims, human-approved actions, and full auditability",
-        "language": "HTML",
-        "name": "EADIP",
-        "pushed": "2026-09-11",
-        "stars": 0
-      },
-      {
         "description": "",
         "language": "Python",
         "name": "AtlasAI",
@@ -125,7 +125,7 @@
   "stale": false,
   "streak": {
     "active_days": 152,
-    "all_time": 977,
+    "all_time": 1008,
     "current": 3,
     "current_from": "2026-09-25",
     "current_to": "2026-09-27",
@@ -135,12 +135,8 @@
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 185,
+    "commits": 197,
     "days": [
-      [
-        "2025-09-28",
-        0
-      ],
       [
         "2025-09-29",
         0
@@ -1531,7 +1527,7 @@
       ],
       [
         "2026-09-11",
-        12
+        21
       ],
       [
         "2026-09-12",
@@ -1595,15 +1591,19 @@
       ],
       [
         "2026-09-27",
-        2
+        24
+      ],
+      [
+        "2026-09-28",
+        0
       ]
     ],
-    "from": "2025-09-28",
+    "from": "2025-09-29",
     "issues": 0,
-    "prs": 7,
-    "restricted": 643,
+    "prs": 10,
+    "restricted": 659,
     "reviews": 0,
-    "to": "2026-09-27",
-    "total": 849
+    "to": "2026-09-28",
+    "total": 880
   }
 }

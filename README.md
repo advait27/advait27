@@ -106,11 +106,11 @@ product strategy from 0 to scale.
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 849 |
-| Commits / pull requests / reviews | 185 / 7 / 0 |
+| Contributions (365 days) | 880 |
+| Commits / pull requests / reviews | 197 / 10 / 0 |
 | Current streak | 3 days |
 | Longest streak | 10 days |
-| All-time contributions | 977 |
+| All-time contributions | 1,008 |
 | Active days since 2020 | 152 |
 | Public repositories | 38 |
 
@@ -123,19 +123,19 @@ product strategy from 0 to scale.
 | HTML | 13% (5) |
 | JavaScript | 3% (1) |
 
-<sub>Ranked by bytes instead, this reads as 75% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
+<sub>Ranked by bytes instead, this reads as 74% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
 
 **Most recently pushed**
 
 | | | |
 |:--|:--|--:|
+| [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-27 |
 | [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | HTML | 2026-09-17 |
 | [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-09-17 |
 | [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
-| [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-11 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 
-<sub>Generated 2026-09-27 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-09-28 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 
