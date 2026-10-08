@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
   "followers": 6,
-  "generated": "2026-10-06",
+  "generated": "2026-10-08",
   "langs": {
     "by_bytes": [
       [
@@ -124,11 +124,11 @@
   "schema": 1,
   "stale": false,
   "streak": {
-    "active_days": 159,
-    "all_time": 1071,
-    "current": 2,
-    "current_from": "2026-10-04",
-    "current_to": "2026-10-05",
+    "active_days": 160,
+    "all_time": 1072,
+    "current": 1,
+    "current_from": "2026-10-07",
+    "current_to": "2026-10-07",
     "longest": 10,
     "longest_from": "2026-09-02",
     "longest_to": "2026-09-11",
@@ -137,14 +137,6 @@
   "window": {
     "commits": 197,
     "days": [
-      [
-        "2025-10-07",
-        0
-      ],
-      [
-        "2025-10-08",
-        0
-      ],
       [
         "2025-10-09",
         0
@@ -1596,14 +1588,22 @@
       [
         "2026-10-06",
         0
+      ],
+      [
+        "2026-10-07",
+        1
+      ],
+      [
+        "2026-10-08",
+        0
       ]
     ],
-    "from": "2025-10-07",
+    "from": "2025-10-09",
     "issues": 0,
     "prs": 10,
-    "restricted": 722,
+    "restricted": 723,
     "reviews": 0,
-    "to": "2026-10-06",
-    "total": 943
+    "to": "2026-10-08",
+    "total": 944
   }
 }
