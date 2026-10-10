@@ -106,12 +106,12 @@ product strategy from 0 to scale.
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 944 |
+| Contributions (365 days) | 955 |
 | Commits / pull requests / reviews | 197 / 10 / 0 |
-| Current streak | 1 days |
+| Current streak | 2 days |
 | Longest streak | 10 days |
-| All-time contributions | 1,072 |
-| Active days since 2020 | 160 |
+| All-time contributions | 1,083 |
+| Active days since 2020 | 162 |
 | Public repositories | 38 |
 
 **Languages, measured — by primary language of repository**
@@ -135,7 +135,7 @@ product strategy from 0 to scale.
 | [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 
-<sub>Generated 2026-10-08 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-10-10 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 
