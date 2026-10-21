@@ -16,13 +16,18 @@
 
 # From business questions to production AI
 
-I'm **Advait**, an AI engineer based in **Dublin, Ireland**. I build agentic
-systems, retrieval pipelines and evaluation infrastructure that turn ambiguous
-business problems into software people can use and trust.
+I'm **Advait**, a **Forward Deployed Engineer working in Applied AI**, based in
+**Dublin, Ireland**. I partner with customers, product teams and engineering
+organizations to turn ambiguous business challenges into production AI systems.
+
+My work connects **agentic systems, RAG and LLM evaluation** with the practical
+work of enterprise deployment: architecture, integrations, AI security,
+customer discovery and adoption. I've applied that approach to financial-services
+compliance intelligence and airline operations across a **300+ aircraft fleet**.
 
 My path into engineering started in business analytics and operations. That
-perspective still shapes how I build: start with the decision, ground the
-system in evidence, and measure whether it helps.
+perspective still shapes how I build: start with the decision, understand the
+constraints, and deliver software people trust enough to use.
 
 > **Open to opportunities:** Founding AI Engineer, Applied AI Engineer,
 > Forward Deployed Engineer and AI consulting — in Ireland, across Europe
@@ -30,6 +35,7 @@ system in evidence, and measure whether it helps.
 
 <p>
 <samp>
+<a href="#how-i-deliver-enterprise-ai">Approach</a> /
 <a href="#selected-work">Selected work</a> /
 <a href="#research">Research</a> /
 <a href="#engineering-toolkit">Toolkit</a> /
@@ -38,11 +44,24 @@ system in evidence, and measure whether it helps.
 </samp>
 </p>
 
-## What I focus on
+## How I deliver enterprise AI
 
-| Build useful intelligence | Make it dependable | Take it into production |
-|:--|:--|:--|
-| Agents, RAG, tool use and decision intelligence | Evaluation, grounded claims, observability and human oversight | APIs, tenant isolation, secure integrations and enterprise deployment |
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="svg/delivery-dark.svg">
+  <img alt="Enterprise AI delivery: discover the customer problem, design the architecture, integrate enterprise systems, validate with evaluations, and deploy with customer onboarding. Feedback informs the next iteration." src="svg/delivery-light.svg" width="880">
+</picture>
+</p>
+
+- **Discover with the customer.** Lead technical discovery, requirements
+  definition and stakeholder alignment; connect the architecture to the
+  operational decision it needs to improve.
+- **Build for enterprise constraints.** Integrate Gmail and Microsoft Graph
+  through OAuth 2.0, with incremental synchronization, secure consent flows,
+  tenant isolation, PII masking and audit trails.
+- **Validate and support adoption.** Use structured-output checks, confidence
+  thresholds and regression tests, while working with leadership on roadmap,
+  pricing, onboarding and customer deployments.
 
 My independent work includes **EADIP**, **Veritas**, open-source Python
 packages and research into the reliability and oversight of agentic AI.
@@ -117,8 +136,8 @@ evaluation set of labelled broker threads.
 |:--|:--|
 | **80–90% lower LLM token spend per broker** | Targeted-surveillance architecture at Frensei: header scan → PII-masked body fetch → LLM classification |
 | **~60% fewer hallucinated or inconsistent outputs** | Production evaluation, structured-output checks and calibrated confidence thresholds at Frensei |
-| **~20% operational cost savings** | ML optimization across a 300+ aircraft fleet at IndiGo |
-| **~40% decision-quality improvement** | Production ML and BI frameworks on GCP / Azure at IndiGo |
+| **~20% operational cost savings** | Aircraft weight prediction and operational cost models at IndiGo |
+| **~40% decision-quality improvement** | BI reporting logic and insight frameworks on GCP / Azure at IndiGo |
 | **25% new-business growth** | A 15-member analyst team at CHRIST Consulting |
 
 ## Research
@@ -149,43 +168,61 @@ and observability**.
 | Data & storage | PostgreSQL · DuckDB · Supabase · Redis · Qdrant · Neo4j |
 | Reliability | Evaluation harnesses · structured outputs · confidence scoring · OpenTelemetry · pytest · mypy · ruff |
 | Deployment | Docker · GCP · Azure · CI · multi-tenant SaaS · hybrid and VPC deployment |
-| Security | PII masking · prompt-injection defense · OAuth 2.0 · row-level security · AES-256-GCM |
+| Enterprise integration & security | Gmail API · Microsoft Graph · OAuth 2.0 · incremental sync · PII masking · prompt-injection defense · row-level security · AES-256-GCM · audit logging |
+| Customer delivery | Technical discovery · requirements definition · stakeholder alignment · solution design · customer onboarding · product roadmap and pricing strategy |
 
 ## Experience
 
 **Founding AI Engineer & Product Lead — Frensei Innovation Labs / ClawbackVault AI**
-<br><samp>Previous role · Dublin, Ireland</samp>
-<br>Built AI architecture, enterprise deployment and product strategy for a
-compliance-intelligence platform serving financial-services broker-dealers.
-Developed a four-tier signal engine across 15+ behavioural categories,
-privacy-first surveillance and agentic compliance-research workflows.
-Built and led a 15-person cross-functional team across AI engineering,
-cybersecurity and analytics.
+<br><samp>Nov 2025 – Sep 2026 · Previous role · Dublin, Ireland</samp>
+<br>Partnered with leadership and customers to design and deploy a compliance-
+intelligence platform for financial services under enterprise security,
+privacy and regulatory constraints.
+
+- Architected targeted email intelligence that reduced LLM inference costs
+  **80–90%**, and behavioural risk detection across **15+ categories** with
+  structured evidence, confidence scoring and explainable outputs.
+- Built Gmail API and Microsoft Graph integrations with OAuth 2.0,
+  incremental synchronization, tenant isolation and secure consent flows.
+  Implemented PII masking before model calls, AES-256-GCM encryption,
+  prompt-injection protection, GDPR exports and audit logging; helped the
+  platform satisfy CASA Tier 2 and Google OAuth Restricted Scope requirements.
+- Built production evaluation workflows and partnered with the Founder on
+  technical discovery, customer onboarding, roadmap and pricing strategy.
 
 **Business Analyst & ML Engineer — IndiGo / InterGlobe Aviation**
 <br><samp>Jan 2024 – Aug 2025 · Gurugram, India</samp>
-<br>Delivered ML-driven optimization and decision intelligence across a 300+
-aircraft fleet. Promoted into ML engineering within six months, connecting
-data science with executive decision-making.
+<br>Delivered ML and decision intelligence for operations across a **300+
+aircraft fleet**. Developed aircraft weight prediction and operational cost
+models, contributing to **~20% cost savings**. Led technical discovery,
+requirements definition and stakeholder alignment, and built cloud analytics
+for operations, maintenance and executive decision-making.
 
 **Business Intelligence Engineer, Business Technology & Product — IndiGo**
 <br><samp>Jun 2023 – Dec 2023 · Gurugram, India</samp>
+<br>Built production BI and insight frameworks on **GCP and Azure**. Led
+requirements gathering, problem analysis and solution design; new reporting
+logic and product parameters improved decision quality by **~40%**.
 
 **Teaching Assistant, Digital Technologies in Business — University College Dublin**
 <br><samp>Jan – May 2026</samp>
 <br>Taught postgraduate tutorials on AI in business, digital transformation
-and data-driven decision-making for 150+ students.
+and data-driven decision-making for 150+ students. Guided case studies in
+technology adoption, AI strategy and business value creation, collaborating
+with faculty to connect course content to production practice.
 
 <details>
 <summary><b>Earlier experience & mentoring</b></summary>
 
 **Business Development Analyst, Team Lead — CHRIST Consulting**
 <br><samp>Jun 2021 – Jun 2022 · India</samp>
-<br>Led a 15-member analyst team on market-entry and growth strategy;
-approximately 15% improvement in renewals and upsells.
+<br>Led a **15-member analyst team** on market-entry and growth strategy,
+translating analysis into executive presentations and client recommendations.
+Drove **25% growth in new-business acquisition** and approximately **15%
+improvement in renewals and upsells**.
 
 **Business Analytics & ML Mentor — topmate.io**
-<br><samp>2025 – 2026</samp>
+<br><samp>Jan 2025 – May 2026</samp>
 <br>Coached professionals on LLM application development and moving into
 AI engineering roles.
 
@@ -196,12 +233,23 @@ The Sparks Foundation and EntryLevel (2020–2023).
 
 ## Education
 
-- **MSc, Business Analytics** — UCD Michael Smurfit Graduate Business School *(Sep 2025 – Aug 2026)*
-- **PG Professional Certification, AI & Machine Learning** — IIT Kanpur *(2023 – 2024)*
-- **BBA, Business Analytics & Data Science** — Christ University, Bangalore *(2020 – 2023)*
+- **MSc, Business Analytics** — UCD Michael Smurfit Graduate Business School *(Sep 2025 – Sep 2026)*
+- **PG Professional Certification, AI & Machine Learning** — IIT Kanpur *(Oct 2023 – Jul 2024)*
+- **BBA, Business Analytics & Data Science** — Christ University, Bangalore *(Jun 2020 – Jun 2023)*
 
 Honours: **Global Leadership Programme**, awarded by the Dean of the UCD
 College of Business, and the **UCD Advantage Award** (2026).
+
+<details>
+<summary><b>Certifications & additional learning</b></summary>
+
+- Introduction to Model Context Protocol
+- Data Strategy
+- Google Project Management Professional
+- BCG Advanced Analytics and Data Science Virtual Experience
+- Data visualization and analytics experience program
+
+</details>
 
 ## GitHub activity
 
