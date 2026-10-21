@@ -8,6 +8,8 @@ same number on every machine -- once the font is embedded (see fontkit).
 
 from xml.sax.saxutils import escape, quoteattr
 
+from .fontkit import face_css
+
 ADVANCE = 0.6  # em, verified against JetBrainsMono-Regular head/hmtx
 
 
@@ -32,6 +34,14 @@ def fmt(n):
     decimals is far below a pixel at our sizes.
     """
     return f"{float(n):.2f}".rstrip("0").rstrip(".") or "0"
+
+
+def new_panel(width, height, title, desc, charset, weights=(400, 700)):
+    """Create a panel with a declared, committed font subset."""
+    svg = Svg(width, height, title, desc)
+    svg.declared = set(charset) | {" "}
+    svg.font_css = face_css(charset, weights)
+    return svg
 
 
 class Svg:
