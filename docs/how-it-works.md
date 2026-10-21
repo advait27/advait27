@@ -19,6 +19,30 @@ Three files matter. `fetch_data.py` talks to the API and writes a snapshot.
 network, so the same snapshot always produces the same bytes. `verify.py`
 proves it.
 
+## Profile design and career copy
+
+`scripts/lib/identity.py` draws the static identity panels: the blueprint-style
+hero, EADIP and Veritas project cards, previous-role impact, and the core
+toolkit. `scripts/lib/panels.py` draws measured activity; both use colour tokens
+from `scripts/lib/theme.py` and the shared writer in `scripts/lib/svgkit.py`.
+The README wraps each project card in a normal link, because links inside an
+SVG loaded as an image are not interactive.
+
+Frensei Innovation Labs is a **previous role**. Its outcomes remain attributed
+to that employer, and the experience entry does not invent an end date. The
+banner describes engineering focus and location without implying a current
+employer. Update career copy in the README and static panel copy together.
+The nightly refresh only replaces the `data:start` / `data:end` block and
+re-renders graphics; it cannot restore old employment copy.
+
+The toolkit lists technologies without numeric proficiency ratings. Career
+outcomes are separate from GitHub activity. The pulse's active-day count uses
+the same 365-day window as its headline; all-time active days remain explicitly
+labelled in the year panel and text fallback.
+
+Identity panels are static, and activity-chart geometry has complete base
+values so it remains visible in SVG viewers without SMIL animation support.
+
 ---
 
 ## What GitHub actually allows
@@ -121,7 +145,7 @@ carries its own copy of the font.
 
 That makes charset size the whole game. Each panel is subset to exactly the
 glyphs it can draw, which keeps the worst panel around 9 KB of font and the
-whole page at 88 KB per theme.
+whole page below the enforced 150 KB per-theme budget.
 
 The catch: a panel's charset must not depend on the day's numbers, or a
 contribution count going from 608 to 610 would need a subset that isn't
