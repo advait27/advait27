@@ -18,7 +18,7 @@ import datetime as dt
 
 from .fontkit import ALNUM, VOLATILE
 from .svgkit import Svg, fmt, text_width, new_panel as _new
-from .identity import hero, impact, eadip, veritas, skills
+from .identity import hero, impact, delivery, eadip, veritas, skills
 
 W = 880          # full-bleed panel width; GitHub's README column at desktop
 HALF = 432       # two of these sit side by side
@@ -282,6 +282,7 @@ def now(snap, t):
 
 
 PANELS = {
+    "delivery": (delivery, W),
     "hero":   (hero, W),
     "impact": (impact, W),
     "eadip":  (eadip, W),
