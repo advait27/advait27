@@ -16,8 +16,9 @@ need a font subset that is not committed. See fontkit.
 
 import datetime as dt
 
-from .fontkit import ALNUM, VOLATILE, face_css
-from .svgkit import Svg, fmt, text_width
+from .fontkit import ALNUM, VOLATILE
+from .svgkit import Svg, fmt, text_width, new_panel as _new
+from .identity import hero, impact, eadip, veritas, skills
 
 W = 880          # full-bleed panel width; GitHub's README column at desktop
 HALF = 432       # two of these sit side by side
@@ -32,69 +33,6 @@ def _shorten(s, limit):
     if len(s) <= limit:
         return s
     return s[: max(0, limit - 1)].rstrip(" ,.;:-") + "…"
-
-
-def _new(width, height, title, desc, charset, weights=(400, 700)):
-    """Build a panel with its font already subset to `charset`.
-
-    `charset` is a declaration, not a description: it must cover every glyph
-    the panel could ever draw, for any data. render.py checks what was
-    actually drawn against it and fails on drift.
-    """
-    svg = Svg(width, height, title, desc)
-    svg.declared = set(charset) | {" "}
-    svg.font_css = face_css(charset, weights)
-    return svg
-
-
-# ---------------------------------------------------------------------------
-# hero
-# ---------------------------------------------------------------------------
-
-def hero(snap, t):
-    # Name in title case; everything under it stays lowercase, so the name
-    # is the only thing on the page carrying capitals and reads as the
-    # heading it is.
-    name = snap["name"]
-    role = "FORWARD DEPLOYED AI ENGINEER"
-    tag = "agentic systems / rag / llm evaluation / enterprise deployment"
-    meta = "dublin, ireland     ucd smurfit     frensei"
-
-    h = 178
-    charset = set(name + role + tag + meta) | set(VOLATILE)
-    svg = _new(W, h, f"{snap['name']} — forward deployed AI engineer",
-               f"{snap['name']}. {role.title()}. {tag}. {meta}.",
-               charset, weights=(400, 700, 800))
-
-    size = 38
-    y = 62
-    width = text_width(name, size)
-
-    # The name types itself in: a clip rect widens left to right with a block
-    # riding its edge as a cursor. fill="freeze" everywhere, so the page draws
-    # once and stops rather than looping in the reader's peripheral vision.
-    svg.define(
-        f'<clipPath id="wipe"><rect x="0" y="{fmt(y - size)}" '
-        f'height="{fmt(size * 1.4)}" width="0">'
-        f'{Svg.anim("width", 0, width, 0.9, 0.1)}</rect></clipPath>'
-    )
-    svg.add(f'<g clip-path="url(#wipe)">'
-            + svg.text(0, y, name, size, t["fg"], weight=800) + "</g>")
-    svg.add(svg.rect(0, y - size * 0.78, size * 0.5, size * 0.94, t["accent"],
-                     anim=Svg.anim("x", 0, width, 0.9, 0.1)
-                     + '<set attributeName="opacity" to="0" begin="1s" fill="freeze"/>'))
-
-    rule_y = y + 26
-    svg.add(svg.line(0, rule_y, 0, rule_y, t["rule"], 1.5,
-                     anim=Svg.anim("x2", 0, W, 0.7, 0.95)))
-
-    svg.add(svg.text(0, rule_y + 30, role, 13.5, t["accent"], weight=700,
-                     extra='letter-spacing="1.6"', anim=Svg.fade(1, 0.45, 1.15)))
-    svg.add(svg.text(0, rule_y + 52, tag, 13, t["muted"],
-                     anim=Svg.fade(1, 0.45, 1.3)))
-    svg.add(svg.text(0, rule_y + 78, meta, 12, t["faint"],
-                     anim=Svg.fade(1, 0.45, 1.45)))
-    return svg
 
 
 # ---------------------------------------------------------------------------
@@ -116,7 +54,7 @@ def pulse(snap, t):
         label = "public contributions in the last 365 days"
 
     stats = [("commits", win["commits"]), ("pull requests", win["prs"]),
-             ("active days", snap["streak"]["active_days"]),
+             ("active days", sum(c > 0 for _, c in days)),
              ("repositories", snap["repos"]["total"])]
 
     h = 196
@@ -155,7 +93,7 @@ def pulse(snap, t):
                f'<stop offset="1" stop-color="{t["accent"]}" stop-opacity="0"/>'
                f'</linearGradient>')
     svg.define(f'<clipPath id="reveal"><rect x="0" y="{top - 6}" '
-               f'height="{fmt(base - top + 12)}" width="0">'
+               f'height="{fmt(base - top + 12)}" width="{W}">'
                f'{Svg.anim("width", 0, W, 1.1, 0.55)}</rect></clipPath>')
 
     svg.add(f'<g clip-path="url(#reveal)">')
@@ -230,7 +168,7 @@ def year(snap, t):
     # these. Cells fade in column by column: a wipe across the year.
     svg.define(f'<rect id="c" width="{fmt(cell)}" height="{fmt(cell)}" rx="2.4"/>')
     for col in range(cols):
-        column = [f'<g opacity="0">{Svg.fade(1, 0.32, 0.25 + col * 0.011)}']
+        column = [f'<g opacity="1">{Svg.fade(1, 0.32, 0.25 + col * 0.011)}']
         for row in range(7):
             if (col, row) not in grid:
                 continue
@@ -309,55 +247,6 @@ def streak(snap, t):
 
 
 # ---------------------------------------------------------------------------
-# skills -- declared proficiency, not measured output
-# ---------------------------------------------------------------------------
-
-# Sourced from the CV and portfolio, not from the API. These are a claim the
-# owner makes, so the panel says "self-assessed" on its face: it sits beside
-# real contribution counts, and a reader should never have to guess which of
-# the two numbers on the page were measured. Edit this list to change it.
-SKILLS = [
-    ("python", 95),
-    ("sql", 90),
-    ("langgraph / agents", 88),
-    ("fastapi", 85),
-    ("typescript", 82),
-]
-
-
-def skills(snap, t):
-    data = SKILLS[:5]
-
-    h = 184
-    charset = set(ALNUM) | set(VOLATILE) | set("core stack self assessed")
-    svg = _new(HALF, h, "Core stack, self-assessed proficiency",
-               "Self-assessed proficiency, from CV: "
-               + ", ".join(f"{k} {v}%" for k, v in data) + ".", charset)
-
-    svg.add(svg.line(0, 0.5, HALF, 0.5, t["rule"], 1))
-    svg.add(svg.text(0, 26, "core stack / self-assessed", 11, t["faint"],
-                     anim=Svg.fade(1, 0.4, 0.2)))
-
-    bar_x, bar_w = 132, HALF - 132 - 46
-    for i, (name, pct) in enumerate(data):
-        y = 52 + i * 23
-        svg.add(svg.text(0, y + 8, _shorten(name, 20), 11.5, t["fg"],
-                         anim=Svg.fade(1, 0.4, 0.3 + i * 0.07)))
-        svg.add(svg.rect(bar_x, y, bar_w, 9, t["grid"], rx=4.5,
-                         anim=Svg.fade(1, 0.4, 0.3 + i * 0.07)))
-        svg.add(svg.rect(bar_x, y, 0, 9, t["accent"], rx=4.5,
-                         anim=Svg.anim("width", 0, bar_w * pct / 100, 0.75,
-                                       0.35 + i * 0.07)))
-        svg.add(svg.text(HALF, y + 8, f"{pct}%", 11, t["muted"], anchor="end",
-                         anim=Svg.fade(1, 0.4, 0.45 + i * 0.07)))
-
-    note = "measured language split in the README"
-    svg.note_chars(note)
-    svg.add(svg.text(0, h - 10, note, 10, t["faint"], anim=Svg.fade(1, 0.4, 1.0)))
-    return svg
-
-
-# ---------------------------------------------------------------------------
 # now -- what was actually touched, most recently
 # ---------------------------------------------------------------------------
 
@@ -394,6 +283,9 @@ def now(snap, t):
 
 PANELS = {
     "hero":   (hero, W),
+    "impact": (impact, W),
+    "eadip":  (eadip, W),
+    "veritas": (veritas, W),
     "pulse":  (pulse, W),
     "year":   (year, W),
     "streak": (streak, HALF),
