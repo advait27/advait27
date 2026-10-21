@@ -1,7 +1,7 @@
 """Static identity graphics, separate from measured GitHub activity.
 
-All copy is based on the existing profile. Former-role outcomes retain their
-employer labels; technology names describe tools used, never skill scores.
+Copy is based on the existing GitHub profile and the owner's LinkedIn export.
+Former-role outcomes retain employer labels; tools never carry skill scores.
 """
 
 from .fontkit import ALNUM, VOLATILE
@@ -79,6 +79,38 @@ def impact(snap, t):
         svg.add(svg.text(x, 83, value, 32, t['accent'], weight=700))
         svg.add(svg.text(x, 108, label, 12, t['fg']))
         svg.add(svg.text(x, 131, source, 10, t['faint']))
+    return svg
+
+
+def delivery(snap, t):
+    stages = [('DISCOVER', 'Customer problem'),
+              ('DESIGN', 'Architecture'),
+              ('INTEGRATE', 'Enterprise systems'),
+              ('VALIDATE', 'Evals + security'),
+              ('DEPLOY', 'Customer onboarding')]
+    svg = _panel(174, 'From customer discovery to enterprise AI deployment',
+                 'Discover the customer problem, design the architecture, '
+                 'integrate enterprise systems, validate with evaluations and '
+                 'security controls, then deploy with customer onboarding. '
+                 'Feedback informs the next iteration. This is a delivery '
+                 'approach, not a measured performance chart.', t)
+    svg.add(svg.text(24, 29, 'FORWARD DEPLOYED / FROM PROBLEM TO PRODUCTION',
+                     10, t['accent'], weight=700))
+    for i, (stage, detail) in enumerate(stages):
+        x = 24 + i * 170
+        svg.add(svg.rect(x, 49, 152, 66, t['raised'], rx=9,
+                         extra=f'stroke="{t["rule"]}"'))
+        svg.add(svg.text(x + 12, 68, f'0{i + 1}', 9, t['faint']))
+        svg.add(svg.text(x + 12, 87, stage, 12, t['fg'], weight=700))
+        svg.add(svg.text(x + 12, 103, detail, 9.5, t['muted']))
+        if i < len(stages) - 1:
+            svg.add(svg.path(f'M{x + 156} 82 h10 m-4 -4 l4 4 -4 4',
+                             stroke=t['accent'], width=1.4))
+    svg.add(svg.path('M780 124 v12 H100 v-12 m-4 4 l4 -4 4 4',
+                     stroke=t['accent'], width=1.1,
+                     extra='stroke-dasharray="3 4"'))
+    svg.add(svg.text(440, 158, 'FEEDBACK / CONTEXT + ENGINEERING + CUSTOMER TRUST',
+                     10, t['signal'], anchor='middle'))
     return svg
 
 

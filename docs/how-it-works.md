@@ -22,16 +22,21 @@ proves it.
 ## Profile design and career copy
 
 `scripts/lib/identity.py` draws the static identity panels: the blueprint-style
-hero, EADIP and Veritas project cards, previous-role impact, and the core
-toolkit. `scripts/lib/panels.py` draws measured activity; both use colour tokens
+hero, EADIP and Veritas project cards, customer delivery approach,
+previous-role impact, and the core toolkit. `scripts/lib/panels.py` draws measured activity; both use colour tokens
 from `scripts/lib/theme.py` and the shared writer in `scripts/lib/svgkit.py`.
 The README wraps each project card in a normal link, because links inside an
 SVG loaded as an image are not interactive.
 
 Frensei Innovation Labs is a **previous role**. Its outcomes remain attributed
-to that employer, and the experience entry does not invent an end date. The
+to that employer. The owner's LinkedIn export supplies the confirmed tenure
+(November 2025 to September 2026), education and mentoring dates, and details
+of customer-facing delivery, enterprise integrations and security work. The
 banner describes engineering focus and location without implying a current
 employer. Update career copy in the README and static panel copy together.
+The delivery diagram illustrates an engineering approach, not a measured
+chart. Certifications and learning programmes remain distinct from academic
+degrees; CASA Tier 2 and restricted-scope OAuth refer to platform requirements.
 The nightly refresh only replaces the `data:start` / `data:end` block and
 re-renders graphics; it cannot restore old employment copy.
 
