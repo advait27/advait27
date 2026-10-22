@@ -292,12 +292,12 @@ College of Business, and the **UCD Advantage Award** (2026).
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 1,442 |
-| Commits / pull requests / reviews | 193 / 10 / 0 |
-| Current streak | 1 days |
+| Contributions (365 days) | 1,465 |
+| Commits / pull requests / reviews | 214 / 13 / 0 |
+| Current streak | 2 days |
 | Longest streak | 10 days |
-| All-time contributions | 1,575 |
-| Active days since 2020 | 165 |
+| All-time contributions | 1,598 |
+| Active days since 2020 | 166 |
 | Public repositories | 38 |
 
 **Languages, measured — by primary language of repository**
@@ -306,8 +306,8 @@ College of Business, and the **UCD Advantage Award** (2026).
 |:--|--:|
 | Python | 47% (18) |
 | Jupyter Notebook | 37% (14) |
-| HTML | 13% (5) |
-| JavaScript | 3% (1) |
+| HTML | 11% (4) |
+| JavaScript | 5% (2) |
 
 <sub>Ranked by bytes instead, this reads as 74% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
 
@@ -315,13 +315,13 @@ College of Business, and the **UCD Advantage Award** (2026).
 
 | | | |
 |:--|:--|--:|
+| [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | JavaScript | 2026-10-21 |
 | [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-27 |
-| [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | HTML | 2026-09-17 |
 | [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-09-17 |
 | [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 
-<sub>Generated 2026-10-21 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-10-22 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 

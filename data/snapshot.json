@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
   "followers": 6,
-  "generated": "2026-10-21",
+  "generated": "2026-10-22",
   "langs": {
     "by_bytes": [
       [
@@ -10,23 +10,23 @@
       ],
       [
         "HTML",
-        3731314
+        3726552
       ],
       [
         "Python",
-        2861261
+        2865877
+      ],
+      [
+        "JavaScript",
+        321853
       ],
       [
         "TypeScript",
         310382
       ],
       [
-        "JavaScript",
-        299595
-      ],
-      [
         "CSS",
-        258677
+        288278
       ],
       [
         "Shell",
@@ -68,11 +68,11 @@
       ],
       [
         "HTML",
-        5
+        4
       ],
       [
         "JavaScript",
-        1
+        2
       ]
     ],
     "repo_count": 38
@@ -83,17 +83,17 @@
   "repos": {
     "recent": [
       {
+        "description": "My portfolio website",
+        "language": "JavaScript",
+        "name": "Advait-portfolio",
+        "pushed": "2026-10-21",
+        "stars": 0
+      },
+      {
         "description": "Enterprise Autonomous Decision Intelligence Platform — a governed multi-agent AI that investigates business questions with verified claims, human-approved actions, and full auditability",
         "language": "HTML",
         "name": "EADIP",
         "pushed": "2026-09-27",
-        "stars": 0
-      },
-      {
-        "description": "My portfolio website",
-        "language": "HTML",
-        "name": "Advait-portfolio",
-        "pushed": "2026-09-17",
         "stars": 0
       },
       {
@@ -124,23 +124,19 @@
   "schema": 1,
   "stale": false,
   "streak": {
-    "active_days": 165,
-    "all_time": 1575,
-    "current": 1,
+    "active_days": 166,
+    "all_time": 1598,
+    "current": 2,
     "current_from": "2026-10-20",
-    "current_to": "2026-10-20",
+    "current_to": "2026-10-21",
     "longest": 10,
     "longest_from": "2026-09-02",
     "longest_to": "2026-09-11",
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 193,
+    "commits": 214,
     "days": [
-      [
-        "2025-10-22",
-        0
-      ],
       [
         "2025-10-23",
         0
@@ -1023,7 +1019,7 @@
       ],
       [
         "2026-05-31",
-        2
+        1
       ],
       [
         "2026-06-01",
@@ -1595,15 +1591,19 @@
       ],
       [
         "2026-10-21",
+        24
+      ],
+      [
+        "2026-10-22",
         0
       ]
     ],
-    "from": "2025-10-22",
+    "from": "2025-10-23",
     "issues": 0,
-    "prs": 10,
-    "restricted": 1226,
+    "prs": 13,
+    "restricted": 1225,
     "reviews": 0,
-    "to": "2026-10-21",
-    "total": 1442
+    "to": "2026-10-22",
+    "total": 1465
   }
 }
