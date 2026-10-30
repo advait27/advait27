@@ -16,18 +16,19 @@
 
 # From business questions to production AI
 
-I'm **Advait**, a **Forward Deployed Engineer working in Applied AI**, based in
-**Dublin, Ireland**. I partner with customers, product teams and engineering
-organizations to turn ambiguous business challenges into production AI systems.
+I'm **Advait**, an **Applied AI engineer focused on forward deployed engineering**,
+based in **Dublin, Ireland**. My experience spans business intelligence, machine
+learning and enterprise AI delivery: turning business questions into reliable,
+usable software through technical discovery, architecture and customer delivery.
 
-My work connects **agentic systems, RAG and LLM evaluation** with the practical
-work of enterprise deployment: architecture, integrations, AI security,
-customer discovery and adoption. I've applied that approach to financial-services
-compliance intelligence and airline operations across a **300+ aircraft fleet**.
+Previously, as **Founding AI Engineer & Product Lead at Frensei Innovation Labs
+(October 2025–October 2026)**, I built compliance intelligence systems with
+privacy controls, enterprise integrations and evaluation workflows. Earlier
+work at **IndiGo (June 2023–August 2025)** supported operations across a
+**300+ aircraft fleet**.
 
-My path into engineering started in business analytics and operations. That
-perspective still shapes how I build: start with the decision, understand the
-constraints, and deliver software people trust enough to use.
+My independent work includes **EADIP**, **Veritas**, published Python packages
+and research preprints on enterprise AI deployment and agent oversight.
 
 > **Open to opportunities:** Founding AI Engineer, Applied AI Engineer,
 > Forward Deployed Engineer and AI consulting — in Ireland, across Europe
@@ -137,24 +138,25 @@ evaluation set of labelled broker threads.
 | **80–90% lower LLM token spend per broker** | Targeted-surveillance architecture at Frensei: header scan → PII-masked body fetch → LLM classification |
 | **~60% fewer hallucinated or inconsistent outputs** | Production evaluation, structured-output checks and calibrated confidence thresholds at Frensei |
 | **~20% operational cost savings** | Aircraft weight prediction and operational cost models at IndiGo |
-| **~40% decision-quality improvement** | BI reporting logic and insight frameworks on GCP / Azure at IndiGo |
 | **25% new-business growth** | A 15-member analyst team at CHRIST Consulting |
 
 ## Research
 
-**Forward Deployed Engineering: A Systems Engineering Perspective**
+**[Forward Deployed Engineering: A Systems Engineering Perspective](https://doi.org/10.5281/zenodo.22813634)**
 <br><samp>First-author preprint / 2026</samp>
 <br>Studies forward deployed engineering as a systems-engineering discipline
 through a multivocal literature review, mapping it to ISO/IEC/IEEE 15288
 lifecycle processes and proposing a cross-organizational enterprise-AI
 deployment lifecycle.
 
-**What Agent Traces Cannot Tell You: Evidentiary Adequacy of Runtime Records for Agentic AI Oversight**
+**[What Agent Traces Cannot Tell You: Evidentiary Adequacy of Runtime Records for Agentic AI Oversight](https://doi.org/10.5281/zenodo.22814181)**
 <br><samp>First-author preprint + open benchmark / 2026</samp>
 <br>Tests whether runtime records support the findings of fact required for AI
 oversight. Across 1,200 enterprise agent trajectories, six determination
 families and four record conditions, coverage rises from **16.3%** for action
 logs and OpenTelemetry GenAI spans to **100%** for a labelled substrate.
+These results apply to the benchmark record conditions; they are not a general
+claim of perfect agent accuracy.
 
 Ongoing research: **context engineering, enterprise agents, AI evaluation
 and observability**.
@@ -173,8 +175,11 @@ and observability**.
 
 ## Experience
 
+IndiGo employment spans **June 2023–August 2025**, with the BI-to-ML
+progression shown below. Career and education dates follow my CV.
+
 **Founding AI Engineer & Product Lead — Frensei Innovation Labs / ClawbackVault AI**
-<br><samp>Nov 2025 – Sep 2026 · Previous role · Dublin, Ireland</samp>
+<br><samp>Oct 2025 – Oct 2026 · Previous role · Dublin, Ireland</samp>
 <br>Partnered with leadership and customers to design and deploy a compliance-
 intelligence platform for financial services under enterprise security,
 privacy and regulatory constraints.
@@ -194,7 +199,7 @@ privacy and regulatory constraints.
 <br><samp>Jan 2024 – Aug 2025 · Gurugram, India</samp>
 <br>Delivered ML and decision intelligence for operations across a **300+
 aircraft fleet**. Developed aircraft weight prediction and operational cost
-models, contributing to **~20% cost savings**. Led technical discovery,
+models, contributing to **reported operational cost savings of approximately 20%**. Led technical discovery,
 requirements definition and stakeholder alignment, and built cloud analytics
 for operations, maintenance and executive decision-making.
 
@@ -202,7 +207,7 @@ for operations, maintenance and executive decision-making.
 <br><samp>Jun 2023 – Dec 2023 · Gurugram, India</samp>
 <br>Built production BI and insight frameworks on **GCP and Azure**. Led
 requirements gathering, problem analysis and solution design; new reporting
-logic and product parameters improved decision quality by **~40%**.
+logic and product parameters supported cross-functional operational decisions.
 
 **Teaching Assistant, Digital Technologies in Business — University College Dublin**
 <br><samp>Jan – May 2026</samp>
@@ -233,8 +238,8 @@ The Sparks Foundation and EntryLevel (2020–2023).
 
 ## Education
 
-- **MSc, Business Analytics** — UCD Michael Smurfit Graduate Business School *(Sep 2025 – Sep 2026)*
-- **PG Professional Certification, AI & Machine Learning** — IIT Kanpur *(Oct 2023 – Jul 2024)*
+- **MSc, Business Analytics** — UCD Michael Smurfit Graduate Business School *(Sep 2025 – Aug 2026)*
+- **PG Professional Certification, AI & Machine Learning** — IIT Kanpur *(Oct 2023 – Sep 2024)*
 - **BBA, Business Analytics & Data Science** — Christ University, Bangalore *(Jun 2020 – Jun 2023)*
 
 Honours: **Global Leadership Programme**, awarded by the Dean of the UCD
