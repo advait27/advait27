@@ -1,7 +1,7 @@
 {
   "created": "2020-10-22",
   "followers": 7,
-  "generated": "2026-10-30",
+  "generated": "2026-10-31",
   "langs": {
     "by_bytes": [
       [
@@ -14,7 +14,7 @@
       ],
       [
         "Python",
-        2865877
+        2903913
       ],
       [
         "JavaScript",
@@ -83,6 +83,13 @@
   "repos": {
     "recent": [
       {
+        "description": "",
+        "language": "Python",
+        "name": "AI-Research",
+        "pushed": "2026-10-31",
+        "stars": 0
+      },
+      {
         "description": "My portfolio website",
         "language": "JavaScript",
         "name": "Advait-portfolio",
@@ -94,13 +101,6 @@
         "language": "HTML",
         "name": "EADIP",
         "pushed": "2026-09-27",
-        "stars": 0
-      },
-      {
-        "description": "",
-        "language": "Python",
-        "name": "AI-Research",
-        "pushed": "2026-09-17",
         "stars": 0
       },
       {
@@ -124,23 +124,19 @@
   "schema": 1,
   "stale": false,
   "streak": {
-    "active_days": 167,
-    "all_time": 1604,
-    "current": 1,
+    "active_days": 168,
+    "all_time": 1605,
+    "current": 2,
     "current_from": "2026-10-30",
-    "current_to": "2026-10-30",
+    "current_to": "2026-10-31",
     "longest": 10,
     "longest_from": "2026-09-02",
     "longest_to": "2026-09-11",
     "since": "2020-10-22"
   },
   "window": {
-    "commits": 220,
+    "commits": 221,
     "days": [
-      [
-        "2025-10-31",
-        0
-      ],
       [
         "2025-11-01",
         0
@@ -1596,14 +1592,18 @@
       [
         "2026-10-30",
         6
+      ],
+      [
+        "2026-10-31",
+        1
       ]
     ],
-    "from": "2025-10-31",
+    "from": "2025-11-01",
     "issues": 0,
     "prs": 13,
     "restricted": 1223,
     "reviews": 0,
-    "to": "2026-10-30",
-    "total": 1469
+    "to": "2026-10-31",
+    "total": 1470
   }
 }

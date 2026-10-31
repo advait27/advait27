@@ -297,12 +297,12 @@ College of Business, and the **UCD Advantage Award** (2026).
 
 | | |
 |:--|--:|
-| Contributions (365 days) | 1,469 |
-| Commits / pull requests / reviews | 220 / 13 / 0 |
-| Current streak | 1 days |
+| Contributions (365 days) | 1,470 |
+| Commits / pull requests / reviews | 221 / 13 / 0 |
+| Current streak | 2 days |
 | Longest streak | 10 days |
-| All-time contributions | 1,604 |
-| Active days since 2020 | 167 |
+| All-time contributions | 1,605 |
+| Active days since 2020 | 168 |
 | Public repositories | 38 |
 
 **Languages, measured — by primary language of repository**
@@ -320,13 +320,13 @@ College of Business, and the **UCD Advantage Award** (2026).
 
 | | | |
 |:--|:--|--:|
+| [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-10-31 |
 | [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | JavaScript | 2026-10-30 |
 | [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-27 |
-| [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-09-17 |
 | [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 
-<sub>Generated 2026-10-30 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-10-31 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 
