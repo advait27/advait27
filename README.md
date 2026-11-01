@@ -314,19 +314,19 @@ College of Business, and the **UCD Advantage Award** (2026).
 | HTML | 11% (4) |
 | JavaScript | 5% (2) |
 
-<sub>Ranked by bytes instead, this reads as 74% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
+<sub>Ranked by bytes instead, this reads as 73% Jupyter Notebook — notebooks store rendered cell outputs as base64 in their own JSON, and Linguist counts those plots as authored code.</sub>
 
 **Most recently pushed**
 
 | | | |
 |:--|:--|--:|
+| [Krypton](https://github.com/advait27/Krypton) | Python | 2026-11-01 |
 | [AI-Research](https://github.com/advait27/AI-Research) | Python | 2026-10-31 |
 | [Advait-portfolio](https://github.com/advait27/Advait-portfolio) | JavaScript | 2026-10-30 |
 | [EADIP](https://github.com/advait27/EADIP) | HTML | 2026-09-27 |
-| [Krypton](https://github.com/advait27/Krypton) | Python | 2026-09-14 |
 | [AtlasAI](https://github.com/advait27/AtlasAI) | Python | 2026-08-30 |
 
-<sub>Generated 2026-10-31 from `data/snapshot.json`.</sub>
+<sub>Generated 2026-11-01 from `data/snapshot.json`.</sub>
 
 <!-- data:end -->
 
